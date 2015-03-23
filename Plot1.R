@@ -2,7 +2,8 @@
 # create datetime column, useful for graphs.
 # subset a 2-day period.
 
-data <- read.table("household_power_consumption.txt", sep = ";", header = T, 
+#  New comment. added new parameter to my read.table call in line 6.
+data <- read.table("household_power_consumption.txt", sep = ";", header = T, strangsAsFactors = F,
     colClasses  =  c("character", "character", "numeric",
                     "numeric", "numeric", "numeric",
                     "numeric", "numeric", "numeric"),
